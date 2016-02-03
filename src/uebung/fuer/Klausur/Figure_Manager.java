@@ -44,27 +44,27 @@ ArrayList<Figure> alF = new ArrayList<>();
 	public  HashMap<String, Double>
 	getAreabySizeCategory()
 	{
+		HashMap<String, Double> map = new HashMap<>();
 		double sumKL=0,sumMI=0,sumGR=0;
 		for (Figure figure : alF) 
 		{
-			
 			if(figure.getArea()<1000)
 			{
 				sumKL+=figure.getArea();
 			}
-			if(figure.getArea()<=4999)
+			if(figure.getArea()<=4999 && figure.getArea()>1000)
 			{
 				sumMI+=figure.getArea();
 			}
-			else
+			if(figure.getArea()>=5000)
 			{
 				sumGR+=figure.getArea();
 			}
 				
 		}
-		getAreabySizeCategory().put("Klein", sumKL);
-		getAreabySizeCategory().put("Mittel", sumMI);
-		getAreabySizeCategory().put("Groﬂ", sumGR);
-		return getAreabySizeCategory();
+		map.put("Klein", sumKL);
+		map.put("Mittel", sumMI);
+		map.put("Groﬂ", sumGR);
+		return map;
 	}
 }

@@ -3,13 +3,13 @@ package uebung.fuer.Klausur;
 public class Demo {
 
 	public static void main(String[] args) {
-		Rectangle R1 = new Rectangle(10, 5);
+		Rectangle R1 = new Rectangle(100, 5);
 		System.out.println("R1-Länge " + R1.getLenght());
 		System.out.println("R1-Breite " + R1.getWidth());
 		System.out.println("R1-Fläche " + R1.getArea());
 		System.out.println("R1-Umfang " + R1.getPerimeter());
 	
-		Circle C1 = new Circle(5);
+		Circle C1 = new Circle(25);
 		System.out.println("C1-Radius " +C1.getRadius());
 		System.out.println("C1-Umfang " +C1.getPerimeter());
 		System.out.println("C1-Fläche " +C1.getArea());
