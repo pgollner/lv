@@ -47,7 +47,6 @@ public class demo {
 			map.put(car.getColor(), temp);
 		}
 			
-			
 		}
 		return map;
 

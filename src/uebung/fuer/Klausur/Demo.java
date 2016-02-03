@@ -14,13 +14,19 @@ public class Demo {
 		System.out.println("C1-Umfang " +C1.getPerimeter());
 		System.out.println("C1-Fläche " +C1.getArea());
 		
+		Dice D1 = new Dice(10);
+		System.out.println("D1-Fläche " + D1.getArea());
+		System.out.println("D1-Volumen " + D1.getVolume());
+		
 		Figure_Manager fm1 = new Figure_Manager();
 		fm1.add(R1);
 		fm1.add(C1);
+		fm1.add(D1);
 		
 		System.out.println(fm1.getMaxPerimeter());
 		System.out.println(fm1.getAverageAreaSize());
 		System.out.println(fm1.getAreabySizeCategory());
+		
 	}
 	
 

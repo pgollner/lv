@@ -6,10 +6,10 @@ import java.util.HashMap;
 public class Figure_Manager {
 ArrayList<Figure> alF = new ArrayList<>();
 
-/*public Figure_Manager(ArrayList<Figure> alF) {
+public Figure_Manager() {
 	super();
-	this.alF = alF;
-}*/
+
+}
 
 	public void add(Figure f)
 	{
@@ -41,7 +41,7 @@ ArrayList<Figure> alF = new ArrayList<>();
 		return avgArea;
 	}
 	
-	public  HashMap<String, Double>
+	public HashMap<String, Double>
 	getAreabySizeCategory()
 	{
 		HashMap<String, Double> map = new HashMap<>();
